@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public abstract class Abstract2 {
 
-    abstract protected   void privateMethod();
+    abstract protected void privateMethod();
 
     abstract void defaultMethod();
 }
@@ -34,8 +34,10 @@ class Child2 extends Parent {
     }
 }
 
-interface Int1 {}
+interface Int1 {
+}
 
-interface Int2 extends Int1 {}
+interface Int2 extends Int1 {
+}
 
 //interface Int3 implements Int2 {}
