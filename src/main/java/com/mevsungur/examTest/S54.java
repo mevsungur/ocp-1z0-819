@@ -3,6 +3,7 @@ package com.mevsungur.examTest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BinaryOperator;
 import java.util.function.Consumer;
 
 /**
@@ -13,9 +14,11 @@ public class S54 {
 
     public static void main(String[] args) {
         List<Employee_54> list = List.of(new Employee_54("John", 80000.0));
-       // double totalSalary = list.stream().map(Employee::getSalary * ratio).reduce (bo).orElse(0.0);
-
-        Consumer consumer = System.out::print;
+        double starts=0.0, ratio=1.0;
+        BinaryOperator<Double> bo = (a,b) -> a+b;
+        //double totalSalary = list.stream().map(Employee::getSalary * ratio).reduce (bo).orElse(0.0);
+        double totalSalary = list.stream().mapToDouble(e-> e.getSalary() * ratio).sum();
+        System.out.println(totalSalary);
     }
 
 }

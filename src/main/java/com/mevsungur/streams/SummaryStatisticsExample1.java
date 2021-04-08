@@ -3,6 +3,7 @@ package com.mevsungur.streams;
 import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SummaryStatisticsExample1 {
 
@@ -14,5 +15,13 @@ public class SummaryStatisticsExample1 {
         System.out.println(doubleSummaryStatistics.getMax());
         System.out.println(doubleSummaryStatistics.getAverage());
         System.out.println(doubleSummaryStatistics.getSum());
+
+        double collect = integers.stream().distinct().collect(Collectors.averagingDouble(i -> i));
+
+        System.out.println(collect);
+
+
+
+
     }
 }

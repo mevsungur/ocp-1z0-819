@@ -26,6 +26,9 @@ public class Abstract {
         System.out.println(str.substring(5));
         System.out.println(4+3);
 
+        StringBuilder sb = new StringBuilder("mevlüt");
+        System.out.println(" ..." +sb.delete(-2,-3));
+
 
     }
 }

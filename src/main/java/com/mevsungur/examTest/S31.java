@@ -12,13 +12,29 @@ public class S31 {
         S31_A obj = new S31_B();
         System.out.println(obj.x);
         System.out.println(((S31_B) obj).x);
+        obj.m1();
+
+        S31_B variable = null;
+        S31_B.stMeth();
+
+
+
+        variable.m1();
     }
 }
 
 class S31_B extends S31_A {
     int x = 17;
 
+    public static void stMeth() {
+        System.out.println("...");
+    }
+
     public S31_B() {
         super();
+    }
+
+    public void m1() {
+        System.out.println("B");
     }
 }

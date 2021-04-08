@@ -9,16 +9,16 @@ import java.util.function.BiFunction;
 public class S171 {
 
     public static void main(String[] args) {
-        Pair<String> stringPair = new Pair<String>((x,y) -> x.equals(y), "AA","AA");
-        boolean valid = stringPair.isValid();
-        System.out.println("");
+        Pair<String> p = new Pair<String>((x,y) -> x.equals(y), "AA","AA");
+        boolean valid = p.isValid();
+        System.out.println(valid);
     }
 }
 
 class Pair<T> {
     final BiFunction<T, T, Boolean> validator;
-     T left = null;
-     T right = null;
+      T left = null;
+      T right = null;
 
     private Pair() {
         validator = null;

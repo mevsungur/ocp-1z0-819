@@ -1,5 +1,6 @@
 package com.mevsungur.examTest;
 
+import java.io.InputStream;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.Random;
@@ -15,6 +16,7 @@ public class S163 {
         MyInterface1 myInterface1 = () -> new Random().nextInt();
         MyInterface2 myInterface2 = () -> new Random().nextBoolean();
         //MyInterface3 myInterface3 = () -> "...";
+
 
         DayOfWeek dayOfWeek = LocalDate.now().with(TUESDAY).getDayOfWeek();
 
@@ -35,7 +37,7 @@ public class S163 {
 interface MyInterface1 {
     public int method() throws Exception;
 
-    private void pMethod() {}
+
 }
 
 interface MyInterface2 {

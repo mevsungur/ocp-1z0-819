@@ -15,6 +15,7 @@ public class S21 {
         list1.add("A");
         list1.add("B");
         List list2 = List.copyOf(list1);
+
         //list2.add("C");
         list2.set(0,"C");
 

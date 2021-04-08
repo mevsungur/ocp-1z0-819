@@ -11,4 +11,8 @@ public class S31_A {
     protected S31_A() {
 
     }
+
+    public void m1() {
+        System.out.println("a");
+    }
 }

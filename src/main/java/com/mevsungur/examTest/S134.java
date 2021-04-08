@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -47,17 +48,17 @@ public class S134 {
         System.out.println(s2);
 
         //C
-//        Set<String> s3 = roster.stream()
-//                .collect(Collectors.partitioningBy(y,Collectors.mapping(Employee::getName,Collectors.toSet())));
+        //Set<String> s3 = roster.stream()
+          //      .collect(Collectors.partitioningBy(y,Collectors.mapping(Employee::getName,Collectors.toSet())));
 
 //        System.out.println(s3);
 
         //d
-//        Set<String> s4 = roster.stream()
-//                .collect(Collectors.partitioningBy(y,Collectors.groupingBy(Employee::getName,Collectors.toCollection(TreeSet::new))));
+        //Set<String> s4 = roster.stream()
+          //      .collect(Collectors.partitioningBy(y,Collectors.groupingBy(Employee::getName,Collectors.toCollection(TreeSet::new))));
 //
 //        System.out.println(s3);
-
+        Function<Integer, Integer> f = n -> n * 2;
 
     }
 }

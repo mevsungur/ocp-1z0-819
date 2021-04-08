@@ -1,5 +1,7 @@
 package com.mevsungur.examTest;
 
+import java.sql.JDBCType;
+
 /**
  * mevlut.sungur
  * 31.03.2021
@@ -10,7 +12,7 @@ public class S4 {
 
 class Foo {
     private void print() {
-        System.out.println("Bonjout le monde!");
+        System.out.println("Bonjour le monde!");
     }
 
     public void foo() {
@@ -30,5 +32,7 @@ class Bar extends Foo {
         Bar b = new Bar();
         b.foo();
         b.bar();
+
+
     }
 }

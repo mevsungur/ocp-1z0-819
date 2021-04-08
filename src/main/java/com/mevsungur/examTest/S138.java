@@ -14,6 +14,8 @@ public class S138 {
 
 class Foo138 {
     public List<Number> foo(Set<CharSequence> m) {
+
+
         return null;
     }
 }
@@ -22,7 +24,7 @@ class Bar138 extends Foo138{
 
     //public List<Integer> foo(Set<CharSequence> m) { return null; }
 
-    //public ArrayList<Number> foo(Set<CharSequence> m) { return null; }
+    public ArrayList<Number> foo(Set<CharSequence> m) { return null; }
 
     //public List<Integer> foo(TreeSet<String> m) { return null; }
 

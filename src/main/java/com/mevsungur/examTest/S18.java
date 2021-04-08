@@ -2,6 +2,7 @@ package com.mevsungur.examTest;
 
 
 
+
 /**
  * mevlut.sungur
  * 5.04.2021
@@ -21,4 +22,19 @@ public class S18 {
     }
 }
 
-class MyThread18 extends Thread {}
+class MyThread18 implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Running");
+    }
+
+
+}
+
+//class MyThread18 extends Thread {
+//    @Override
+//    public void run() {
+//        System.out.println("Running");
+//    }
+//},
+
